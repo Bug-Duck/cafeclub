@@ -1,14 +1,14 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import alias from '@rollup/plugin-alias';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
   server: {
     proxy: {
-      // 配置代理，以便在开发中将API请求代理到Flask服务器
       '/api': {
-        target: 'http://localhost:5000', // Flask后端服务器地址
+        target: 'http://localhost:5000',
         changeOrigin: true,
         secure: false,
         ws: true,
@@ -16,20 +16,15 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist', // 构建输出目录
-    emptyOutDir: true, // 构建前清空输出目录
+    outDir: 'src/templates',
+    emptyOutDir: true,
     rollupOptions: {
-      // 配置Rollup选项来控制构建输出
-      input: {
-        main: "./index.html"
-        // 如果有其他的入口点，可以在这里添加
-      },
+      input: "./index.html",
       output: {
-        // 输出配置，根据需要进行调整
-        chunkFileNames: 'index.html',
-        entryFileNames: 'main.js',
-        assetFileNames: 'static/style.css',
+        entryFileNames: "static/index.js",
+        assetFileNames: "static/style.css",
+        chunkFileNames: "index.html"
       },
-    },
-  },
+    }
+  }
 })

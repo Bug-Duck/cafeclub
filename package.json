@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "start": "npm run build && python ./src/app.py"
+    "start": "npm run build && python src/app.py"
   },
   "dependencies": {
-    "vue": "^3.3.11"
+    "@rollup/plugin-alias": "^5.1.0",
+    "vite-plugin-html": "^3.2.2",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",

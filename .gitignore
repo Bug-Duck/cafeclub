@@ -91,6 +91,7 @@ out
 .nuxt
 dist
 
+<<<<<<< HEAD
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
@@ -128,5 +129,17 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+=======
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+>>>>>>> 89db0f6 (feat: Add compiler surport.)
 
 src/templates/**
