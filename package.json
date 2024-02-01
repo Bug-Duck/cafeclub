@@ -1,0 +1,24 @@
+{
+  "name": "cafeclub",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "dev:backend": "cd backend && python3 main.py",
+    "dev:frontend": "vite"
+  },
+  "dependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
+    "vite-plugin-html": "^3.2.2",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vue-tsc": "^1.8.25"
+  }
+}
