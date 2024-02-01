@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "start": "npm run build && python src/app.py"
+    "dev:backend": "python src/app.py",
+    "dev:frontend": "vite"
   },
   "dependencies": {
     "@rollup/plugin-alias": "^5.1.0",

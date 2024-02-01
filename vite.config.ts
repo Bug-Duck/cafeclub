@@ -15,16 +15,4 @@ export default defineConfig({
       },
     },
   },
-  build: {
-    outDir: 'src/templates',
-    emptyOutDir: true,
-    rollupOptions: {
-      input: "./index.html",
-      output: {
-        entryFileNames: "static/index.js",
-        assetFileNames: "static/style.css",
-        chunkFileNames: "index.html"
-      },
-    }
-  }
 })
