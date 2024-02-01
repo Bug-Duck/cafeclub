@@ -6,7 +6,7 @@
   "scripts": {
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "dev:backend": "python src/app.py",
+    "dev:backend": "cd src/backend && python3 main.py",
     "dev:frontend": "vite"
   },
   "dependencies": {
