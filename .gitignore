@@ -143,3 +143,6 @@ dist
 >>>>>>> 89db0f6 (feat: Add compiler surport.)
 
 src/templates/**
+
+__pycache__/
+/src/backend/databases/salt.txt
